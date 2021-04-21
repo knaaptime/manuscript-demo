@@ -1,0 +1,21 @@
+name: manuscript-demo
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3
+  - jupyter                         # necessary to run notebooks
+  - jupyterlab                      # necessary to run notebooks
+  - pandas >=1.0                    # generate markdown tables
+  - tabulate                        # generate markdown tables
+  - pandoc >=2.12                   # necessary to compile the paper
+  - pandoc-crossref >=0.3.10        # necessary to compile the paper
+  - tectonic                        # necessary to compile the paper
+  - watermark                       # add metadata to notebooks
+  - seaborn                         # requirement of stargazer and we want from conda not pip
+  - gh
+  - pip
+  - pip:
+    - pandoc-include                 # necessary to compile the paper
+    - pandoc-latex-admonition        # necessary to compile the paper
+    - stargazer
